@@ -24,6 +24,15 @@ const Chat = () => {
 
   return (
     <div className="w-2/3 h-full flex flex-col border rounded-lg shadow-lg bg-white dark:bg-gray-800">
+      <div className="p-4 border-b dark:border-gray-700">
+        <div className="flex items-center gap-3">
+          <div>
+            <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Garage Door Service</h1>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Book your repair appointment</p>
+          </div>
+        </div>
+      </div>
+
       <div className="flex-1 overflow-y-auto p-4">
         {messages
           .filter(message => message.content)
